@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<!-- This file uses in-line style citations, due to needing to be used within an email-->
+<head>
+    <meta charset="utf-8">
+    <title>Product Order Form</title>
+</head>
+
+<body style="margin: 0 10%; font-family: Verdana, sans-serif;">
+
+    <h1 style="text-align: left; font-family: serif; font-weight: normal; font-size: 1.5em; text-transform: uppercase; border-bottom: 1px solid #FCD12A; margin-top: 30px; color: rgba(0, 0, 0, 0.5); padding: 1em;">Triad Corporation Product Order Form</h1>
+    <p style="margin: 0;">
+        Please fill out this form to submit a request to purchase one of our products. <br />
+        Specify below which product you would like to purchase.
+    </p>
+    <form action="" method="post" style="margin-top: 20px;">
+        <!-- Fieldset for contact information and shipping-->
+        <fieldset style="border: none;">
+            <legend style="font-size: 1.2em; font-weight: bold;">Contact/Address Information:</legend>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;">
+                    <label for="form-name" style="display: block;">Name:</label>
+                    <input type="text" name="customername" id="form-name" style="width: 100%; padding: 5px;">
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label for="form-address" style="display: block;">Address:</label>
+                    <input type="text" name="addressLocation" id="form-address" style="width: 100%; padding: 5px;">
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label for="form-pNumber" style="display: block;">Phone Number:</label>
+                    <input type="number" name="phoneNumber" id="form-pNumber" style="width: 100%; padding: 5px;">
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label for="form-email" style="display: block;">Email:</label>
+                    <input type="email" name="email" id="form-email" style="width: 100%; padding: 5px;">
+                </li>
+                <li style="margin-bottom: 10px;">
+                    Delivery Instructions:<br />
+                    <textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long" style="width: 100%; padding: 5px;"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <h2 style="font-family: 'Marko One', Georgia, serif; font-weight: bold; margin-top: 20px;">Order Details:</h2>
+        <!-- Fieldset for product selection-->
+        <fieldset style="border: none;">
+            <legend style="font-size: 1.2em; font-weight: bold;">Select Product to be Ordered:</legend>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="radio" name="gpu" value="gpu" style="margin-right: 5px;"> Graphics Processing Unit</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="radio" name="ram" value="ram" style="margin-right: 5px;"> Random Access Memory</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="radio" name="motherboard" value="motherboard" style="margin-right: 5px;"> Motherboard</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="radio" name="coolingUnit" value="coolingUnit" style="margin-right: 5px;"> Cooling Unit</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="radio" name="case" value="case" style="margin-right: 5px;"> Computer Case</label>
+                </li>
+            </ul>
+        </fieldset>
+        <!-- Fieldset for specific cpu elements-->
+        <fieldset style="border: none;">
+            <legend style="font-size: 1.2em; font-weight: bold;">Specific Details:</legend>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="checkbox" name="cpu5600" value="cpu5600" style="margin-right: 5px;"> 8-core GX 5600x</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="checkbox" name="cpu5900" value="cpu5900" style="margin-right: 5px;"> 8-core GX 5900x</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="checkbox" name="cpu6800" value="cpu6800" style="margin-right: 5px;"> 16-core GX 6800x</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="checkbox" name="cpu6900" value="cpu6900" style="margin-right: 5px;"> 16-core GX 6900x</label>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <label style="display: block;"><input type="checkbox" name="cpu7900" value="cpu7900" style="margin-right: 5px;"> 32-core GX 7900x</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <h2 style="font-family: 'Marko One', Georgia, serif; font-weight: bold; margin-top: 20px;">Order Amount:</h2>
+        <!-- Implementation for drop down menu-->
+        <select name="orderAmount" size="1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <!-- Implementation for submit and reset buttons-->
+        <p>
+            <input type="submit" value="Order product" style="padding: 8px 15px; margin-top: 10px; background-color: #0094ff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            <input type="reset" style="padding: 8px 15px; margin-top: 10px; background-color: #ddd; color: black; border: none; border-radius: 5px; cursor: pointer;">
+        </p>
+    </form>
+
+    <footer>
+        <p><small>This page and all properties owned by Triad Corp&copy;</small></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Pricing Table</title>
+    <style>
+        @import url(menuStyles.css);
+        @import url(tableStyles.css);
+    </style>
+</head>
+
+<body>
+    <h1><img src="Triad Corps Shop Logo.png" alt="logo" class="mainlogo"></h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="products.html" target="_blank">Products</a></li>
+                <li><a href="orderForm.html" target="_blank">Order</a></li>
+                <li><a href="table.html" target="_blank">Product Pricing</a></li>
+                <li><a href="CPUproductPage.html" target="_blank">CPU Products</a></li>
+                <li><a href="GPUproductPage.html" target="_blank">GPU Products</a></li>
+                <li><a href="CPUarticle.html" target="_blank">CPU News</a></li>
+                <li><a href="videoPlayer.html" target="_blank">Introduction</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome to Triad Corporation Products</h1>
+
+    <!-- Animated image -->
+    <img id="animatedImage" src="CorporateWoman.gif" alt="Animated Image">
+
+    <p>
+        Please examine product pricing below!
+    </p>
+
+    <!-- Creating and setting up table-->
+    <table>
+        <caption>Product Pricing</caption>
+        <colgroup></colgroup>
+        <colgroup span="3"></colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">&nbsp;</th>
+                <th colspan="2">Pricing Common Header</th>
+                <th rowspan="2">High Tier</th>
+            </tr>
+            <tr>
+                <th>Low Tier</th>
+                <th>Mid Tier</th>
+            </tr>
+        </thead>
+        <!-- Data and info for table-->
+        <tbody>
+            <tr>
+                <th scope="row">GPU Pricing</th>
+                <td>$350</td>
+                <td>$500</td>
+                <td>$750</td>
+            </tr>
+            <tr>
+                <th scope="row">CPU Pricing </th>
+                <td>$250</td>
+                <td>$350</td>
+                <td>$450</td>
+            </tr>
+            <tr>
+                <th scope="row">Ram Speed</th>
+                <td>3600Mhz</td>
+                <td>4000Mhz</td>
+                <td>4800Mhz</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">For more details, contact us at support@triadcorp.com</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <footer>
+        <p><small>This page and all properties owned by Triad Corp&copy;</small></p>
+    </footer>
+
+</body>
+</html>

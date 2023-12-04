@@ -1,0 +1,49 @@
+﻿/* Styles for table.html */
+
+#animatedImage {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Adjust width as needed */
+}
+
+/* Testing additional styles to add theming */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tfoot {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+p {
+    text-align: center;
+}
